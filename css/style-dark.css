@@ -1518,12 +1518,12 @@ blockquote:before,
 .pt-resume .chart {
 	width: 130px;
 	height: 130px;
-	margin: 0 auto 25px;
+	margin: 0 auto 50px;
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 24px;
-	padding: 40px 0 0;
-	color: #eee;
+	padding: 50px 0 0;
+	color: #25ca7f;
 	font-weight: 800;
 }
 
