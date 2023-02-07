@@ -1,0 +1,143 @@
+﻿/* Canvas*/
+.cover-video-canvas{
+
+    border: dashed 3px;
+    border-color: black;
+
+    height: 80%;
+    width: 80%;
+
+    background-color: lightgrey;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+.page-container{
+
+    display: flex;
+    padding: 5px;
+
+    margin-top: 30px;
+}
+
+.cover-image-canvas, .cover-video-canvas{
+
+    border: dashed 3px;
+    border-color: black;
+
+    height: 80%;
+    width: 60%;
+
+    background-color: lightgrey;
+
+    margin: auto;
+    
+    alignment: center;
+    padding: 10px;
+}
+
+
+.cover-image-canvas img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+iframe.video-canvas-size{
+    width: 560px;
+    height: 349px;
+
+}
+
+
+/* Next & previous buttons */
+.videoWrapper > .previousSlide {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.videoWrapper > .nextSlide {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.previousSlide:hover, .nextSlide:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Position the "next button" to the right */
+
+
+
+/* Dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fadeSlide {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+img.slideVideo{
+    width: 100%;
+}
+

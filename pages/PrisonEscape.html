@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="../css/plugins/magnific-popup.css">
 		<link rel="stylesheet" href="../css/plugins/simplebar.css">
 		<link rel="stylesheet" href="../css/plugins/owl.carousel.min.css">
+		<link rel="stylesheet" href="../css/Image_Video_Style.css">
 		<link rel="stylesheet" href="../css/plugins/owl.theme.default.min.css">
 		<link rel="stylesheet" href="../css/plugins/jquery.animatedheadline.css">
 
@@ -86,6 +87,43 @@
 			</div>
 			<div class="row blog-list-container">
 				<div class="col-md-10 offset-md-1">
+					<!--Gallery View-->
+
+					<div class="page-container">
+						<div class="cover-video-canvas">
+
+							<div class="videoWrapper">
+
+								<div class="mySlides fadeSlide">
+									<img class="slideVideo"  src="https://cdn.mos.cms.futurecdn.net/9QwBbDwd9MGkUGcGb9YC9j.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fadeSlide">
+									<iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+								</div>
+
+								<div class="mySlides fadeSlide">
+									<img class="slideVideo"  src="https://cdn.mos.cms.futurecdn.net/9QwBbDwd9MGkUGcGb9YC9j.jpg" style="width:100%">
+								</div>
+
+								<!-- Next and previous buttons -->
+								<a class="previousSlide" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="nextSlide" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+
+
+							<!-- region Dots -->
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+							</div>
+							<!-- endregion Dots -->
+
+						</div>
+					</div>
+
+					<!--Gallery View End-->
 					<div class="row">
 						<div class="col-md-8">
 
@@ -168,6 +206,8 @@
 									</div>
 								</div>
                             </div> -->
+
+							
 
 							<!-- Pagination Blog -->
 							<ul class="pagination">
@@ -302,6 +342,7 @@
 		<script src="../js/jquery.validation.js"></script>
 		<script src="../js/tilt.js"></script>
         <script src="../js/main.js"></script>
+        <script src="../js/Image-Video-js.js"></script>
         <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
 
     </body>
