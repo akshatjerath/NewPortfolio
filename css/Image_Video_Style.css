@@ -4,8 +4,8 @@
     border: dashed 3px;
     border-color: black;
 
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: inherit;
 
     background-color: lightgrey;
 
@@ -26,8 +26,8 @@
     border: dashed 3px;
     border-color: black;
 
-    height: 80%;
-    width: 60%;
+    height: 100%;
+    width: 100% ;
 
     background-color: lightgrey;
 
