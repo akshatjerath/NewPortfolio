@@ -23,6 +23,7 @@
 		<!-- CSS Base -->
         <link rel="stylesheet" href="../css/style-dark.css">
         <link rel="stylesheet" href="../css/categories-style.css">
+        <link rel="stylesheet" href="../css/custom.css">
 
 		<!-- Settings Style -->
 		<link rel="stylesheet" href="../css/settings/left-nav.css" />
@@ -89,7 +90,42 @@
 			<div class="row blog-list-container">
 				<div class="col-md-10 offset-md-1">
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-md-7">
+
+							<div class="page-container">
+
+								<div class="cover-video-canvas">
+
+									<div class="videoWrapper">
+
+										<div class="mySlides fadeSlide">
+											<img class="slideVideo"  src="https://cdn.mos.cms.futurecdn.net/9QwBbDwd9MGkUGcGb9YC9j.jpg" style="width:100%">
+										</div>
+
+										<div class="mySlides fadeSlide">
+											<iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+										</div>
+
+										<div class="mySlides fadeSlide">
+											<img class="slideVideo"  src="https://cdn.mos.cms.futurecdn.net/9QwBbDwd9MGkUGcGb9YC9j.jpg" style="width:100%">
+										</div>
+
+										<a class="previousSlide" onclick="plusSlides(-1)"></a>
+										<a class="nextSlide" onclick="plusSlides(1)"></a>
+									</div>
+
+
+									<div style="text-align:center">
+										<span class="dot" onclick="currentSlide(1)"></span>
+										<span class="dot" onclick="currentSlide(2)"></span>
+										<span class="dot" onclick="currentSlide(3)"></span>
+									</div>
+
+								</div>
+
+
+							</div>
+
 
 							<!--Blog Post-->
 							<div class="blog-post">
@@ -103,39 +139,6 @@
 
 															<!--Gallery View-->
 
-					<div class="page-container">
-						<div class="cover-video-canvas">
-
-							<div class="videoWrapper">
-
-								<div class="mySlides fadeSlide">
-									<img class="slideVideo"  src="https://cdn.mos.cms.futurecdn.net/9QwBbDwd9MGkUGcGb9YC9j.jpg" style="width:100%">
-								</div>
-
-								<div class="mySlides fadeSlide">
-									<iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
-								</div>
-
-								<div class="mySlides fadeSlide">
-									<img class="slideVideo"  src="https://cdn.mos.cms.futurecdn.net/9QwBbDwd9MGkUGcGb9YC9j.jpg" style="width:100%">
-								</div>
-
-								<!-- Next and previous buttons -->
-								<a class="previousSlide" onclick="plusSlides(-1)">&#10094;</a>
-								<a class="nextSlide" onclick="plusSlides(1)">&#10095;</a>
-							</div>
-
-
-							<!-- region Dots -->
-							<div style="text-align:center">
-								<span class="dot" onclick="currentSlide(1)"></span>
-								<span class="dot" onclick="currentSlide(2)"></span>
-								<span class="dot" onclick="currentSlide(3)"></span>
-							</div>
-							<!-- endregion Dots -->
-
-						</div>
-					</div>
 
 					<!--Gallery View End-->
 
@@ -226,9 +229,11 @@
 							</ul>
 
                         </div>
+							
+							<div class="col-md-4">
+								<div class="col_Box">
 
-						<div class="col-md-4">
-							<div class="side-left">
+								<div class="side-left">
 								
 								<!-- Categories -->
 								<div class="categories" style="margin-bottom: 3px">
@@ -325,10 +330,16 @@
 										<li><a href="#">Techniq</a></li>
 									</ul>
 								</div> -->
-
 							</div>
+
+							<div class="customRightPanel">
+								
+							</div>
+
 						</div>
-                    </div>
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>

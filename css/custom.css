@@ -10,3 +10,25 @@
     margin-left: 15px;}
 
 /*.............................................................*/
+
+
+/* Custom right panel */
+/*.customRightPanel{
+
+}*/
+.col_Box{
+    height: max-content;
+    width: inherit;
+}
+.col_Box .side-left{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.row .customRightPanel{
+    
+    width: inherit;
+    height: max-content;
+}
