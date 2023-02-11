@@ -1,12 +1,43 @@
 ﻿
 /*.................................................Custom Rows........................................................*/
-.cust_Row {    
-    display: -ms-flexbox;  
-    display: flex; 
-    -ms-flex-wrap: wrap; 
-    flex-wrap: wrap; 
+.cust_Row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-right: -15px;
     margin-left: 15px;}
 
-/*.............................................................*/
+/*.................................................Custom Rows End........................................................*/
+
+
+
+/* ...........................................Custom right panel....................................................... */
+/*.customRightPanel{
+
+}*/
+
+.col_Box{
+    height: max-content;
+    width: inherit;
+}
+.col_Box .side-left{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.row .customRightPanel{
+
+    width: inherit;
+    height: max-content;
+}
+.col-md-4 video{
+
+    width: 600px;
+    height: max-content;
+}
+
+/* ...........................................Custom right panel End....................................................... */
