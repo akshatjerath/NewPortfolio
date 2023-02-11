@@ -22,6 +22,7 @@
 
 		<!-- CSS Base -->
         <link rel="stylesheet" href="../css/style-dark.css">
+        <link rel="stylesheet" href="../css/custom.css">
         <link rel="stylesheet" href="../css/categories-style.css">
 
 		<!-- Settings Style -->
@@ -86,6 +87,8 @@
                 	<li>Prison Escape</li>
 				</ul>
 			</div>
+			
+
 			<div class="row blog-list-container">
 				<div class="col-md-10 offset-md-1">
 					<div class="row">
@@ -94,30 +97,54 @@
 							<!--Blog Post-->
 							<div class="blog-post">
                         		<div class="content">
-									<div class="thumbnail">
+									<!--<div class="thumbnail">
 										<i class="video-link"></i>
 										<video width="100%" controls autoplay>
 											<source src="../images/Prison_Escape/RobotAndKid.mp4" type="video/mp4">
 										</video>
-										</div>
+										</div>-->
+									
 
 															<!--Gallery View-->
-
 					<div class="page-container">
 						<div class="cover-video-canvas">
 
 							<div class="videoWrapper">
 
 								<div class="mySlides fadeSlide">
-									<img class="slideVideo"  src="https://cdn.mos.cms.futurecdn.net/9QwBbDwd9MGkUGcGb9YC9j.jpg" style="width:100%">
+									<iframe width="560" height="349" src="../images/Prison_Escape/RobotAndKid.mp4" frameborder="0" allowfullscreen></iframe>
 								</div>
 
 								<div class="mySlides fadeSlide">
-									<iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+									<img class="slideVideo"  src="../images/Prison_Escape/Robomap1.PNG" style="width:100%">
 								</div>
 
 								<div class="mySlides fadeSlide">
-									<img class="slideVideo"  src="https://cdn.mos.cms.futurecdn.net/9QwBbDwd9MGkUGcGb9YC9j.jpg" style="width:100%">
+									<img class="slideVideo"  src="../images/Prison_Escape/Robomap2.PNG" style="width:100%">
+								</div>
+
+								<div class="mySlides fadeSlide">
+									<img class="slideVideo"  src="../images/Prison_Escape/Robomap3.PNG" style="width:100%">
+								</div>
+
+								<div class="mySlides fadeSlide">
+									<img class="slideVideo"  src="../images/Prison_Escape/Robomap4.PNG" style="width:100%">
+								</div>
+
+								<div class="mySlides fadeSlide">
+									<img class="slideVideo"  src="../images/Prison_Escape/Robomap5.PNG" style="width:100%">
+								</div>
+
+								<div class="mySlides fadeSlide">
+									<img class="slideVideo"  src="../images/Prison_Escape/Robomap6.PNG" style="width:100%">
+								</div>
+
+								<div class="mySlides fadeSlide">
+									<img class="slideVideo"  src="../images/Prison_Escape/Robomap7.PNG" style="width:100%">
+								</div>
+
+								<div class="mySlides fadeSlide">
+									<img class="slideVideo"  src="../images/Prison_Escape/Robomap8.PNG" style="width:100%">
 								</div>
 
 								<!-- Next and previous buttons -->
@@ -131,6 +158,12 @@
 								<span class="dot" onclick="currentSlide(1)"></span>
 								<span class="dot" onclick="currentSlide(2)"></span>
 								<span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
+								<span class="dot" onclick="currentSlide(5)"></span>
+								<span class="dot" onclick="currentSlide(6)"></span>
+								<span class="dot" onclick="currentSlide(7)"></span>
+								<span class="dot" onclick="currentSlide(8)"></span>
+								<span class="dot" onclick="currentSlide(9)"></span>
 							</div>
 							<!-- endregion Dots -->
 
@@ -139,12 +172,72 @@
 
 					<!--Gallery View End-->
 
-                            		<div class="detalis">
-                                		
-                                		<h4><a href="../single-blog.html">Story Mode</a></h4>
-                                		<div class="text">Proin pulvinar massa neque, vel sodales augue aliquet placerat. Sed consequat commodo magna ac luctus.</div>
-                                		
+									
+									<!-- Categories What did I learn? -->
+									<div class="side-left" style="margin-bottom: 3px">
+										<h4>What did I learn?</h4>
+										<ul>
+											<li>• I learned about AI with patrolling path that shoots,
+												AI that shoots at sight, gun mechanics, possession changing
+												between player, developed my traps, checkpoint system, ammo system,
+												flickering materials, weapon changing, level designing and game modes.
+											</li>
+										</ul>
 									</div>
+
+									<!-- Categories Goals -->
+									<div class="side-left" style="margin-bottom: 3px">
+										<h4>Goals</h4>
+										<ul>
+											<li>• Make a narrative-based shooter game with character possession change.</li>
+											<li>• Develop AI and learn new blueprint skills.</li>
+											<li>• Improve older skills.</li>
+
+										</ul>
+									</div>
+
+									<!-- Categories Challenges faced and how I overcame them -->
+									<div class="side-left" style="margin-bottom: 3px">
+										<h4>Challenges faced and how I overcame them.</h4>
+										<ul>
+											<strong>•	I had a hard time getting around the AI with shooting the player at certain ranges. </strong>
+											<li>Fix: I had to fix the angle of the perception sight and change the delay timer that was there between player getting sighted and then the AI starts shooting.</li>
+											<strong>•	Problems with the UI not showing the correct ammo count.</strong> 
+											<li>Fix: It was a problem with wrong variable being connected and miscalculation of ammo count.</li>
+											<strong>•	Player was unable to interact with the car and the exit location wasn’t getting updated.</strong>
+											<li>Fix: I researched and made some changes in the exit location world location and disable the second character to sit in the car. I scripted it to spawn besides the primary character when he exited the car.</li>
+											<strong>•	There were minor problems in the level as there were too many meshes, so the level wasn’t optimized and was making the game lag.</strong>
+											<li>Fix: To fix this I remade the level by decreasing the asset count and to get rid of the lag.</li>
+
+										</ul>
+									</div>
+
+									<!-- Categories Testing -->
+									<div class="side-left" style="margin-bottom: 3px">
+										<h4>Testing</h4>
+										<ul>
+											<strong>•Player being unable to respawn with the gun.</strong>
+											<li>Fix: Had to tell the gun blueprint to be spawned with the player after he dies by asking as a Boolean if the player has died or not. If yes destroy previous actor and respawn if not, then don’t destroy.</li>
+											<strong>•Gun not getting destroyed after the player dies.</strong>
+											<li>Fix: Male a Boolean if the player has died or not. If yes destroy previous gun actor and respawn if not, then don’t destroy.</li>
+											<strong>•AI not moving even after being placed in nav mesh.</strong>
+											<li>Fix: Bug in unreal engine in itself</li>
+											<strong>•Player unable to spot the bullet.</strong>
+											<li>Fix: Change material and mesh size.</li>
+
+										</ul>
+									</div>
+
+
+									<div class="detalis">
+                                		
+                                		<h4><a href="">Story Mode</a></h4>
+                                		<div class="text">•Player has to switch between both the characters and exit the facility.Each charcter has a specality like robot can fight and the kid can go into small spaces to open doors.
+										
+										
+										</div>																		
+									</div>
+									
 								</div>
                             </div>
 
@@ -160,8 +253,8 @@
 										</div>
                             		<div class="detalis">
                                 		
-                                		<h4><a href="../single-blog.html">PvP Mode</a></h4>
-                                		<div class="text">Each player will earn 20 points by killing eachother and the first one to reach 160 points wins the game.</div>
+                                		<h4><a href="">PvP Mode</a></h4>
+                                		<div class="text">•Each player will earn 20 points by killing eachother and the first one to reach 160 points wins the game.</div>
                                 		
 									</div>
 								</div>
@@ -179,8 +272,8 @@
 										</div>
                             		<div class="detalis">
                                 		
-                                		<h4><a href="../single-blog.html">Tower Defense Mode</a></h4>
-                                		<div class="text">The goal of the mode is to survive the enemy waves and score points by killing them off.
+                                		<h4><a href="">Tower Defense Mode</a></h4>
+                                		<div class="text">•The goal of the mode is to survive the enemy waves and score points by killing them off.
 											 Both the players must work together and need to defend themselves from enemy waves. 
 											 If they survive all the waves with out either off them dying the win.</div>
                                 		
@@ -230,7 +323,7 @@
 						<div class="col-md-4">
 							<div class="side-left">
 								
-								<!-- Categories -->
+								<!-- Categories Time -->
 								<div class="categories" style="margin-bottom: 3px">
 									<h4>Time</h4>
 									<ul>
@@ -238,7 +331,7 @@
 									</ul>
 								</div>
 
-								<!-- Categories -->
+								<!-- Categories Engine -->
 								<div class="categories" style="margin-bottom: 3px">
 									<h4>Engine</h4>
 									<ul>
@@ -246,13 +339,106 @@
 									</ul>
 								</div>
 
-								<!-- Categories -->
+								<!-- Categories Genre -->
+								<div class="categories" style="margin-bottom: 3px">
+									<h4>Genre</h4>
+									<ul>
+										<li>Third Person Shooting and Splitscreen.</li>
+									</ul>
+								</div>
+
+								<!-- Categories Skills I learned -->
 								<div class="categories" style="margin-bottom: 3px">
 									<h4>Skills I learned</h4>
 									<ul>
-										<li>Blueprint</li>
+										<li>Basic AI</li>
+										<li>Animation in unreal</li>
+										<li>Actor Pickups</li>
+										<li>Interfaces</li>
+										<li>UI</li>
+										<li>Game loop</li>
+										<li>Player management</li>
+										<li>Game state</li>
+										<li>Playtesting</li>
+										<li>Bug finding</li>
+										
 									</ul>
 								</div>
+
+<!--
+								&lt;!&ndash; Categories Skills I learned &ndash;&gt;
+								<div class="categories" style="margin-bottom: 3px">
+									<h4>Skills I learned</h4>
+									<ul>
+										<li>•	Basic AI
+											•	Animation in unreal
+											•	Actor Pickups
+											•	Interfaces
+											•	UI
+											•	Game loop
+											•	Player management
+											•	Game state
+											•	Playtesting
+											•	Bug finding
+										</li>
+									</ul>
+								</div>
+
+								&lt;!&ndash; Categories What did I learn? &ndash;&gt;
+								<div class="categories" style="margin-bottom: 3px">
+									<h4>What did I learn?</h4>
+									<ul>
+										<li>I learned about AI with patrolling path that shoots,
+											AI that shoots at sight, gun mechanics, possession changing
+											between player, developed my traps, checkpoint system, ammo system,
+											flickering materials, weapon changing, level designing and game modes.
+										</li>
+									</ul>
+								</div>
+
+								&lt;!&ndash; Categories Challenges faced and how I overcame them &ndash;&gt;
+								<div class="categories" style="margin-bottom: 3px">
+									<h4>Challenges faced and how I overcame them.</h4>
+									<ul>
+										<li>•	I had a hard time getting around the AI with shooting the player at certain ranges. </li>
+										<li>A:I had to fix the angle of the perception sight and change the delay timer that was there between player getting sighted and then the AI starts shooting.</li>
+										<li>•	Problems with the UI not showing the correct ammo count.</li>
+										<li>A:It was a problem with wrong variable being connected and miscalculation of ammo count.</li>
+										<li>•	Player was unable to interact with the car and the exit location wasn’t getting updated.</li>
+										<li>A:I researched and made some changes in the exit location world location and disable the second character to sit in the car. I scripted it to spawn besides the primary character when he exited the car.</li>
+										<li>•	There were minor problems in the level as there were too many meshes, so the level wasn’t optimized and was making the game lag.</li>
+										<li>A:To fix this I remade the level by decreasing the asset count and to get rid of the lag.</li>
+																				
+									</ul>
+								</div>
+
+								&lt;!&ndash; Categories Testing &ndash;&gt;
+								<div class="categories" style="margin-bottom: 3px">
+									<h4>Testing</h4>
+									<ul>
+										<li>•	Player being unable to respawn with the gun.</li>
+										<li>Had to tell the gun blueprint to be spawned with the player after he dies by asking as a Boolean if the player has died or not. If yes destroy previous actor and respawn if not, then don’t destroy.</li>
+										<li>•	Gun not getting destroyed after the player dies.</li>
+										<li>Male a Boolean if the player has died or not. If yes destroy previous gun actor and respawn if not, then don’t destroy.</li>
+										<li>•	AI not moving even after being placed in nav mesh.</li>
+										<li>Bug in unreal engine in itself</li>
+										<li>•	Player unable to spot the bullet.</li>
+										<li>Change material and mesh size.</li>
+										
+									</ul>
+								</div>
+
+								&lt;!&ndash; Categories Goals &ndash;&gt;
+								<div class="categories" style="margin-bottom: 3px">
+									<h4>Goals</h4>
+									<ul>
+										<li>•	Make a narrative-based shooter game with character possession change.</li>
+										<li>•	Develop AI and learn new blueprint skills.</li>
+										<li>•	Improve older skills.</li>
+										
+									</ul>
+								</div>
+-->
 
 								<!-- Recent News -->
 								<!-- <div class="news">

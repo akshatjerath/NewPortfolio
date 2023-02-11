@@ -1,13 +1,8 @@
 ﻿/* Canvas*/
 .cover-video-canvas{
 
-    border: dashed 3px;
-    border-color: black;
-
     height: 100%;
     width: inherit;
-
-    background-color: lightgrey;
 
     margin: 5px;
     padding: 5px;
@@ -23,13 +18,11 @@
 
 .cover-image-canvas, .cover-video-canvas{
 
-    border: dashed 3px;
     border-color: black;
 
     height: 100%;
     width: 100% ;
 
-    background-color: lightgrey;
 
     margin: auto;
     

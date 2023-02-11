@@ -22,7 +22,7 @@ a:focus,
 .pt-about .inter-icon i,
 .blog-list .blog-head .blog-breadcrumb li,
 .blog-list .side-left .search .input-group .input-group-text,
-.blog-list .side-left .news p,
+.blog-list .side-left .news p, .blogBullets,
 .blog-list .blog-post .content .detalis .meta li i {
 	color: #25ca7f !important;
 }
