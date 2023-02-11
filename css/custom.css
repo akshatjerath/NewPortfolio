@@ -41,3 +41,43 @@
 }
 
 /* ...........................................Custom right panel End....................................................... */
+
+
+/* ...........................................Icon Styling Start....................................................... */
+
+.pt-customAbout .service {
+    text-align: center;
+}
+
+.pt-customAbout .service i {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    line-height: 70px;
+    color: #fff;
+    background-color: #0e0f10;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.pt-customAbout .service:hover i:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 5px;
+    left: calc(50% - 30px);
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #25ca7f;
+    -webkit-animation: zoomIn .3s ease;
+    animation: zoomIn .3s ease;
+}
+
+.pt-customAbout .service h4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ...........................................Icon Styling End....................................................... */
