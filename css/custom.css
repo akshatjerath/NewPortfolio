@@ -96,5 +96,15 @@
 /* ...........................................Icon Styling End....................................................... */
 
 /* kiran frontend changes  */
-
+.blog-post.video--edit video{
+    width: 100%;
+}
+@media (min-width:320px) and (max-width:767px){
+    .blog-post.video--edit video{
+        width: 80%;
+    }
+    .col-md-8 .customBlogSection{
+        margin-left: -8%;
+    }
+}
 /* ends here */
