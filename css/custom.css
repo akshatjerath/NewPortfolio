@@ -106,5 +106,8 @@
     .col-md-8 .customBlogSection{
         margin-left: -8%;
     }
+    .col_Box .side-left{
+        margin-top: 50px;
+    }
 }
 /* ends here */
