@@ -158,8 +158,7 @@
 									<div class="side-left" style="margin-bottom: 3px">
 										<h4>About the project?</h4>
 										<ul>
-											<li>• Its a third person shooting game with 3 game modes. First is story mode in which the player has to switch between two charcters to escape a lab.
-												Second is player versus player mode in which two players fight aginst each other. Third is tower defenseI mode in which two players fight againt AI while defending their tower.
+											<li>• Its a first person horror game.It has a simple task of going around in the map and finish the tasks or objectives given.
 											</li>
 										</ul>
 									</div>
@@ -169,10 +168,9 @@
 									<div class="side-left" style="margin-bottom: 3px">
 										<h4>What did I learn?</h4>
 										<ul>
-											<li>• I learned about AI with patrolling path that shoots,
-												AI that shoots at sight, gun mechanics, possession changing
-												between player, developed my traps, checkpoint system, ammo system,
-												flickering materials, weapon changing, level designing and game modes.
+											<li>• I learned about AI with patrolling path that hits, basic hiding blueprint, health system,
+												 objective system, inventory system, flickering materials,
+												 torch, sfx, level designing and different materials type.
 											</li>
 										</ul>
 									</div>
@@ -181,9 +179,9 @@
 									<div class="side-left" style="margin-bottom: 3px">
 										<h4>Goals</h4>
 										<ul>
-											<li>• Make a narrative-based shooter game with character possession change.</li>
+											<li>• Make a horror level.</li>
 											<li>• Develop AI and learn new blueprint skills.</li>
-											<li>• Improve older skills.</li>
+											<li>• Learn how to make horror elements.</li>
 
 										</ul>
 									</div>
@@ -192,14 +190,12 @@
 									<div class="side-left" style="margin-bottom: 3px">
 										<h4>Challenges faced and how I overcame them.</h4>
 										<ul>
-											<strong>•	I had a hard time getting around the AI with shooting the player at certain ranges. </strong>
-											<li>Fix: I had to fix the angle of the perception sight and change the delay timer that was there between player getting sighted and then the AI starts shooting.</li>
-											<strong>•	Problems with the UI not showing the correct ammo count.</strong> 
-											<li>Fix: It was a problem with wrong variable being connected and miscalculation of ammo count.</li>
-											<strong>•	Player was unable to interact with the car and the exit location wasn’t getting updated.</strong>
-											<li>Fix: I researched and made some changes in the exit location world location and disable the second character to sit in the car. I scripted it to spawn besides the primary character when he exited the car.</li>
-											<strong>•	There were minor problems in the level as there were too many meshes, so the level wasn’t optimized and was making the game lag.</strong>
-											<li>Fix: To fix this I remade the level by decreasing the asset count and to get rid of the lag.</li>
+											<strong>• Jump scare feeling. </strong>
+											<li>Fix: The speed of the AI walking past the player was slow increased it, added more bass to sound and decreased the intensity of the light to make it scarier.</li>
+											<strong>• Problems with inventory system not letting player add more item event after there being space in the bag.</strong>
+											<li>Fix: It was a problem with the item taking multiple spaces and showing that its full. Fixed it by changing them to according to the item picked.</li>
+											<strong>• AI not moving even after seeing the player.</strong>
+											<li>Fix: I researched and made some changes to the AI collision as it was way small and not touching the ground to work.</li>
 
 										</ul>
 									</div>
@@ -208,23 +204,15 @@
 									<div class="side-left" style="margin-bottom: 3px">
 										<h4>Testing</h4>
 										<ul>
-											<strong>•Player being unable to respawn with the gun.</strong>
-											<li>Fix: Had to tell the gun blueprint to be spawned with the player after he dies by asking as a Boolean if the player has died or not. If yes destroy previous actor and respawn if not, then don’t destroy.</li>
-											<strong>•Gun not getting destroyed after the player dies.</strong>
-											<li>Fix: Male a Boolean if the player has died or not. If yes destroy previous gun actor and respawn if not, then don’t destroy.</li>
-											<strong>•AI not moving even after being placed in nav mesh.</strong>
-											<li>Fix: Bug in unreal engine in itself</li>
-											<strong>•Player unable to spot the bullet.</strong>
-											<li>Fix: Change material and mesh size.</li>
-
+											<strong>• Player being unable to restart.</strong>
+											<li>Fix: Had to rearrange the UI layer order to work.</li>
+											<strong>• AI animation way too fast.</strong>
+											<li>Fix: Decreased the animation speed.</li>
+											
 										</ul>
+																	
 									</div>
-
-
-									
-									
-								</div>
-                            </div>											
+                           		 </div>											
 
 
 							
@@ -254,7 +242,7 @@
 										<div class="categories" style="margin-bottom: 1px">
 											<h4>Time</h4>
 											<ul>
-												<li>1 Weeks</li>
+												<li>2 Weeks</li>
 											</ul>
 										</div>
 		
@@ -291,12 +279,10 @@
 												<li>Actor Pickups</li>
 												<li>Interfaces</li>
 												<li>UI</li>
-												<li>Game loop</li>
-												<li>Player management</li>
-												<li>Game state</li>
-												<li>Playtesting</li>
-												<li>Bug finding</li>
-												
+												<li>Materials</li>
+												<li>Blueprints</li>
+												<li>Cinematics</li>
+												<li>Playtesting</li>												
 											</ul>
 										</div>
 									</div>

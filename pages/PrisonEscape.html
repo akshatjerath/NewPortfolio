@@ -151,7 +151,7 @@
 															</div>
 
 															<div class="mySlides fadeSlide">
-																<img class="slideVideo"  src="../images/Prison_Escape/Robomap9.png" style="width:100%">
+																<img class="slideVideo"  src="../images/Prison_Escape/Robomap9.PNG" style="width:100%">
 															</div>
 
 															<div class="mySlides fadeSlide">
@@ -161,6 +161,26 @@
 														<div class="mySlides fadeSlide">
 															<img class="slideVideo"  src="../images/Prison_Escape/Robomap11.png" style="width:100%">
 														</div>
+
+														<div class="mySlides fadeSlide">
+															<img class="slideVideo"  src="../images/Prison_Escape/Robomap12.png" style="width:100%">
+														</div>
+
+														<div class="mySlides fadeSlide">
+															<img class="slideVideo"  src="../images/Prison_Escape/Robomap13.png" style="width:100%">
+														</div>
+
+													<div class="mySlides fadeSlide">
+														<img class="slideVideo"  src="../images/Prison_Escape/Robomap14.png" style="width:100%">
+													</div>
+
+													<div class="mySlides fadeSlide">
+														<img class="slideVideo"  src="../images/Prison_Escape/Robomap15.png" style="width:100%">
+													</div>
+
+													<div class="mySlides fadeSlide">
+														<img class="slideVideo"  src="../images/Prison_Escape/Robomap16.png" style="width:100%">
+													</div>
 
 														<!-- Next and previous buttons -->
 														<a class="previousSlide" onclick="plusSlides(-1)">&#10094;</a>
@@ -182,6 +202,10 @@
 														<span class="dot" onclick="currentSlide(10)"></span>
 														<span class="dot" onclick="currentSlide(11)"></span>
 														<span class="dot" onclick="currentSlide(12)"></span>
+														<span class="dot" onclick="currentSlide(13)"></span>
+														<span class="dot" onclick="currentSlide(14)"></span>
+														<span class="dot" onclick="currentSlide(15)"></span>
+														<span class="dot" onclick="currentSlide(16)"></span>
 													</div>
 													<!-- endregion Dots -->
 
@@ -228,13 +252,13 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>Challenges faced and how I overcame them.</h4>
 											<ul>
-												<strong>•	I had a hard time getting around the AI with shooting the player at certain ranges. </strong>
+												<strong>• I had a hard time getting around the AI with shooting the player at certain ranges. </strong>
 												<li>Fix: I had to fix the angle of the perception sight and change the delay timer that was there between player getting sighted and then the AI starts shooting.</li>
-												<strong>•	Problems with the UI not showing the correct ammo count.</strong> 
+												<strong>• Problems with the UI not showing the correct ammo count.</strong> 
 												<li>Fix: It was a problem with wrong variable being connected and miscalculation of ammo count.</li>
-												<strong>•	Player was unable to interact with the car and the exit location wasn’t getting updated.</strong>
+												<strong>• Player was unable to interact with the car and the exit location wasn’t getting updated.</strong>
 												<li>Fix: I researched and made some changes in the exit location world location and disable the second character to sit in the car. I scripted it to spawn besides the primary character when he exited the car.</li>
-												<strong>•	There were minor problems in the level as there were too many meshes, so the level wasn’t optimized and was making the game lag.</strong>
+												<strong>• There were minor problems in the level as there were too many meshes, so the level wasn’t optimized and was making the game lag.</strong>
 												<li>Fix: To fix this I remade the level by decreasing the asset count and to get rid of the lag.</li>
 
 											</ul>
@@ -244,13 +268,13 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>Testing</h4>
 											<ul>
-												<strong>•Player being unable to respawn with the gun.</strong>
+												<strong>• Player being unable to respawn with the gun.</strong>
 												<li>Fix: Had to tell the gun blueprint to be spawned with the player after he dies by asking as a Boolean if the player has died or not. If yes destroy previous actor and respawn if not, then don’t destroy.</li>
-												<strong>•Gun not getting destroyed after the player dies.</strong>
+												<strong>• Gun not getting destroyed after the player dies.</strong>
 												<li>Fix: Male a Boolean if the player has died or not. If yes destroy previous gun actor and respawn if not, then don’t destroy.</li>
-												<strong>•AI not moving even after being placed in nav mesh.</strong>
+												<strong>• AI not moving even after being placed in nav mesh.</strong>
 												<li>Fix: Bug in unreal engine in itself</li>
-												<strong>•Player unable to spot the bullet.</strong>
+												<strong>• Player unable to spot the bullet.</strong>
 												<li>Fix: Change material and mesh size.</li>
 
 											</ul>
