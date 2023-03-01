@@ -91,18 +91,18 @@
 
 			<div class="row blog-list-container">
 				<div class="col-md-10 offset-md-1">
-					<div class="row">
+					<div class="row wrap">
 						<div class="col-md-8">
 
 							<div class="customBlogSection">
 
 
-							<!--Blog Post-->
-							<div class="blog-post">
-                        		<div class="content">
-									
-									
+								<!--Blog Post-->
+								<div class="blog-post">
+									<div class="content">
+																				
 
+																
 															<!--Gallery View-->
 										 	<div class="page-container">
 												<div class="cover-video-canvas">
@@ -122,16 +122,28 @@
 													</div>
 
 													<div class="mySlides fadeSlide">
-														<img class="slideVideo"  src="../images/Horror/Pic3.PNG" style="width:100%">
+														<img class="slideVideo"  src="../images/Horror/Pic3.png" style="width:100%">
 													</div>
 
 													<div class="mySlides fadeSlide">
-														<img class="slideVideo"  src="../images/Horror/Pic4.PNG" style="width:100%">
+														<img class="slideVideo"  src="../images/Horror/Pic4.png" style="width:100%">
 													</div>
 
 													<div class="mySlides fadeSlide">
-														<img class="slideVideo"  src="../images/Horror/Pic1.png" style="width:100%">
+														<img class="slideVideo"  src="../images/Horror/Pic5.png" style="width:100%">
 													</div>
+
+													<div class="mySlides fadeSlide">
+														<img class="slideVideo"  src="../images/Horror/Pic6.png" style="width:100%">
+													</div>
+
+													<div class="mySlides fadeSlide">
+														<img class="slideVideo"  src="../images/Horror/Pic7.png" style="width:100%">
+													</div>
+
+													<div class="mySlides fadeSlide">
+														<img class="slideVideo"  src="../images/Horror/Pic8.png" style="width:100%">
+													</div>													
 
 													<!-- Next and previous buttons -->
 													<a class="previousSlide" onclick="plusSlides(-1)">&#10094;</a>
@@ -146,6 +158,9 @@
 													<span class="dot" onclick="currentSlide(3)"></span>
 													<span class="dot" onclick="currentSlide(4)"></span>
 													<span class="dot" onclick="currentSlide(5)"></span>
+													<span class="dot" onclick="currentSlide(6)"></span>
+													<span class="dot" onclick="currentSlide(7)"></span>
+													<span class="dot" onclick="currentSlide(8)"></span>
 												</div>
 												<!-- endregion Dots -->
 
@@ -154,83 +169,90 @@
 
 											<!--Gallery View End-->
 
-									<!-- Categories What is the project? -->
-									<div class="side-left" style="margin-bottom: 3px">
-										<h4>About the project?</h4>
-										<ul>
-											<li>• Its a first person horror game.It has a simple task of going around in the map and finish the tasks or objectives given.
-											</li>
-										</ul>
-									</div>
-																								
+										<!-- Categories What is the project? -->
+										<div class="side-left" style="margin-bottom: 3px">
+											<h4>About the project?</h4>
+											<ul>
+												<li>• I Its a first person horror game.It has a simple task of going
+													 around in the map and finish the tasks or objectives given.
+												</li>
+											</ul>
+										</div>
+																									
+										
+										<!-- Categories What did I learn? -->
+										<div class="side-left" style="margin-bottom: 3px">
+											<h4>What did I learn?</h4>
+											<ul>
+												<li>• II learned about AI with patrolling path that hits, basic hiding blueprint, health system,
+													 objective system, inventory system, flickering materials,
+													 torch, sfx, level designing and different materials type.
+												</li>
+											</ul>
+										</div>
+
+										<!-- Categories Goals -->
+										<div class="side-left" style="margin-bottom: 3px">
+											<h4>Goals</h4>
+											<ul>
+												<li>• Make a horror level.</li>
+												<li>• Develop AI and learn new blueprint skills.</li>
+												<li>• Learn how to make horror elements.</li>
+
+											</ul>
+										</div>
+
+										<!-- Categories Challenges faced and how I overcame them -->
+										<div class="side-left" style="margin-bottom: 3px">
+											<h4>Challenges faced and how I overcame them.</h4>
+											<ul>
+												<strong>• Jump scare feeling. </strong>
+												<li>Fix: The speed of the AI walking past the player was slow increased it, added more bass to sound and decreased the intensity of the light to make it scarier.</li>
+												<strong>• Problems with inventory system not letting player add more item event after there being space in the bag.</strong> 
+												<li>Fix: It was a problem with the item taking multiple spaces and showing that its full. Fixed it by changing them to according to the item picked.</li>
+												<strong>• AI not moving even after seeing the player.</strong>
+												<li>Fix: I researched and made some changes to the AI collision as it was way small and not touching the ground to work.</li>
+												
+
+											</ul>
+										</div>
+
+										<!-- Categories Testing -->
+										<div class="side-left" style="margin-bottom: 3px">
+											<h4>Testing</h4>
+											<ul>
+												<strong>• Player being unable to respawn with the gun.</strong>
+												<li>Fix: Had to tell the gun blueprint to be spawned with the player after he dies by asking as a Boolean if the player has died or not. If yes destroy previous actor and respawn if not, then don’t destroy.</li>
+												<strong>• Gun not getting destroyed after the player dies.</strong>
+												<li>Fix: Male a Boolean if the player has died or not. If yes destroy previous gun actor and respawn if not, then don’t destroy.</li>
+												
+
+											</ul>
+										</div>
 									
-									<!-- Categories What did I learn? -->
-									<div class="side-left" style="margin-bottom: 3px">
-										<h4>What did I learn?</h4>
-										<ul>
-											<li>• I learned about AI with patrolling path that hits, basic hiding blueprint, health system,
-												 objective system, inventory system, flickering materials,
-												 torch, sfx, level designing and different materials type.
-											</li>
-										</ul>
+										
 									</div>
+								</div>											
 
-									<!-- Categories Goals -->
-									<div class="side-left" style="margin-bottom: 3px">
-										<h4>Goals</h4>
-										<ul>
-											<li>• Make a horror level.</li>
-											<li>• Develop AI and learn new blueprint skills.</li>
-											<li>• Learn how to make horror elements.</li>
+								
 
-										</ul>
-									</div>
+								<!-- Pagination Blog -->
+								<ul class="pagination">
+									<li>
+										<a href="#"><i class="fa fa-angle-left"></i></a>
+									</li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li>
+										<a href="#"><i class="fa fa-angle-right"></i></a>
+									</li>
+								</ul>
 
-									<!-- Categories Challenges faced and how I overcame them -->
-									<div class="side-left" style="margin-bottom: 3px">
-										<h4>Challenges faced and how I overcame them.</h4>
-										<ul>
-											<strong>• Jump scare feeling. </strong>
-											<li>Fix: The speed of the AI walking past the player was slow increased it, added more bass to sound and decreased the intensity of the light to make it scarier.</li>
-											<strong>• Problems with inventory system not letting player add more item event after there being space in the bag.</strong>
-											<li>Fix: It was a problem with the item taking multiple spaces and showing that its full. Fixed it by changing them to according to the item picked.</li>
-											<strong>• AI not moving even after seeing the player.</strong>
-											<li>Fix: I researched and made some changes to the AI collision as it was way small and not touching the ground to work.</li>
+								
 
-										</ul>
-									</div>
-
-									<!-- Categories Testing -->
-									<div class="side-left" style="margin-bottom: 3px">
-										<h4>Testing</h4>
-										<ul>
-											<strong>• Player being unable to restart.</strong>
-											<li>Fix: Had to rearrange the UI layer order to work.</li>
-											<strong>• AI animation way too fast.</strong>
-											<li>Fix: Decreased the animation speed.</li>
-											
-										</ul>
-																	
-									</div>
-                           		 </div>											
-
-
-							
-
-							<!-- Pagination Blog -->
-							<ul class="pagination">
-								<li>
-							  		<a href="#"><i class="fa fa-angle-left"></i></a>
-								</li>
-								<li class="active"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li>
-							  		<a href="#"><i class="fa fa-angle-right"></i></a>
-								</li>
-							</ul>
+							</div>
 						</div>
-                    </div>
 
 						<div class="col-md-4">
 							
@@ -263,7 +285,7 @@
 										<div class="categories" style="margin-bottom: 3px">
 											<h4>Genre</h4>
 											<ul>
-												<li>First Person Horror.</li>
+												<li>First Person Horror</li>
 											</ul>
 										</div>
 									</div>
@@ -282,21 +304,20 @@
 												<li>Materials</li>
 												<li>Blueprints</li>
 												<li>Cinematics</li>
-												<li>Playtesting</li>												
+												<li>Playtesting</li>	
+												
 											</ul>
 										</div>
 									</div>
 								</div>
 
 
-
-							
-							</div>
-						</div>
-                    </div>
-				</div>
+								
+                </div>
 			</div>
+			
 		</div>
+	</div>
 
 		<!-- All Script -->
 		<script src="../js/jquery.min.js"></script>
