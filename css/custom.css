@@ -96,8 +96,65 @@
 /* ...........................................Icon Styling End....................................................... */
 
 /* kiran frontend changes  */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3d3c3c; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #25CA6C; 
+  }
 .blog-post.video--edit video{
     width: 100%;
+}
+.header-main ul li{
+    font-size: 18px;
+}
+.home--page-banner{
+    position: relative;
+    height: 626px;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.testimonial--HomePage{
+    position: relative;
+    width: calc(100% - 200px);
+    height: auto;
+    margin-bottom: 50px;
+    left: 170px;
+    padding: 10px;
+}
+.overflow--auto{
+    overflow: auto;
+}
+.testimonial--HomePage.pt-about {
+    transform: translateX(0%) !important;
+}
+.testimonial--HomePage.pt-about .testimonial-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.fsp {
+    position: relative;
+    width: 1000px;
+    /* background: red; */
+}
+.fsp .testimonial--HomePage{
+    width: 100%;
+    left: 0;
 }
 @media (min-width:320px) and (max-width:767px){
     .blog-post.video--edit video{
@@ -108,6 +165,33 @@
     }
     .col_Box .side-left{
         margin-top: 50px;
+    }
+    .pt-home .social.down--icons{
+        bottom: 5px;
+        width: 250px;
+        left: 25px;
+        position: relative;
+    }
+    .pt-home .social.down--icons ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-main ul li{
+        font-size: 14px;
+    }
+    .testimonial--HomePage{
+        left: 20px;
+        width: calc(100% - 45px);
+    }
+    .fsp {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+@media (min-width:768px) and (max-width:1200px){
+    .fsp {
+        width: 100%;
+        max-width: 500px;
     }
 }
 /* ends here */

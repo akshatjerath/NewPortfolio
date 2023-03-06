@@ -58,3 +58,35 @@ function showSlidesDown(n) {
     slidesDown[slideIndexDown-1].style.display = "block";
     dotsDown[slideIndexDown-1].className += " active";
 }
+
+// for third one with same code but class's and names changed 
+let slideIndexDownThird = 1;
+showSlidesDownThird(slideIndexDownThird);
+
+// Next/previous controls
+function plusSlidesDownThird(n) {
+    showSlidesDownThird(slideIndexDownThird += n);
+}
+
+// Thumbnail image controls
+function currentSlideDownThird(n) {
+    showSlidesDownThird(slideIndexDownThird = n);
+}
+
+
+function showSlidesDownThird(n) {
+    let i;
+    let slidesDownThird = document.getElementsByClassName("mySlidesDownThird");
+    let dotsDownThird = document.getElementsByClassName("dotDownThird");
+    if (n > slidesDownThird.length) {slideIndexDownThird = 1}
+    if (n < 1) {slideIndexDownThird = slidesDownThird.length}
+    for (i = 0; i < slidesDownThird.length; i++) {
+        slidesDownThird[i].style.display = "none";
+    }
+    for (i = 0; i < dotsDownThird.length; i++) {
+        dotsDownThird[i].className = dotsDownThird[i].className.replace(" active", "");
+    }
+    slidesDownThird[slideIndexDownThird-1].style.display = "block";
+    dotsDownThird[slideIndexDownThird-1].className += " active";
+}
+// ends here
