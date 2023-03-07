@@ -156,8 +156,12 @@
     width: 100%;
     left: 0;
 }
+.testimonial-item a{
+    animation-timing-function: linear;
+}
 .testimonial-item a:hover{
-    font-size: 22px;
+    font-size: 20px;
+    animation: 3s linear .1s colorIt;
 }
 @media (min-width:320px) and (max-width:767px){
     .blog-post.video--edit video{
@@ -191,7 +195,7 @@
         max-width: 280px;
     }
     .testimonial-item a:hover{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 @media (min-width:768px) and (max-width:1200px){
