@@ -2191,7 +2191,9 @@ blockquote:before,
 
 .blog-list .blog-head {
 	padding: 100px 0;
-	background-image: url(../img/blog/blog-page-img.jpg);
+	/* background-image: url(../img/blog/blog-page-img.jpg); */
+	background-image: url(../images/Page_BG.png);
+
 	-webkit-background-size: cover;
 			background-size: cover;
 	background-position: center;
