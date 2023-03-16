@@ -171,9 +171,7 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>What did I learn?</h4>
 											<ul>
-												<li>•I learned about AI with patrolling path that shoots, AI that shoots at sight,
-													 gun mechanics, possession changing between player, developed my traps, checkpoint system,
-													  ammo system, flickering materials, weapon changing, level designing and game modes</li>
+												<li>•I learnt about AI with patrolling path that follows the player at sight, gun mechanics, game state, health system, ammo system, UI and blending animation.</li>
 											</ul>
 										</div>
 
@@ -190,12 +188,12 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>Challenges faced and how I overcame them.</h4>
 											<ul>
-												<strong>• The AI was not moving much after hitting the player.  </strong>
-												<li>Fix: I decreased the number of attack AI does before he starts to move and increased the distance number between him and player.</li>
-												<strong>• AI’s hits were not registered.</strong> 
-												<li>Fix:Changed the collision sphere radius and it started working.</li>
-												<strong>• Problems with the UI not showing the enemy health.</strong>
-												<li>Fix: It was a problem with wrong variable being connected and the layer of the enemy health UI.</li>
+												<strong>• The AI was not moving.  </strong>
+												<li>Fix: The patrolling path points z-axis was going under the ground, so I increased the height of the z-axis</li>
+												<strong>• Player’s hits were not registered.</strong> 
+												<li>Fix:Changed the collision sphere radius around the AI and it started working.</li>
+												<strong>• Problems with the UI not showing the ammo count.</strong>
+												<li>Fix: It was a problem with wrong variable being connected and the layer of the ammo number UI.</li>
 												
 											</ul>
 										</div>
@@ -205,9 +203,9 @@
 											<h4>Testing</h4>
 											<ul>
 												<strong>• AI not registering hit from the player.</strong>
-												<li>Fix: It was a problem with animation timing to register the hit at swing. Just dragged the hit result from the player a bit before his animation of swing is completed.</li>
-												<strong>• AI only using one Attack type.</strong>
-												<li>Fix: The condition was the distance between the AI and the player. It was too big for the game area so decreased it and it started working.</li>
+												<li>Fix: Changed the collision sphere radius around the bullet and it started working.</li>
+												<strong>• AI was not blowing up after coming towards the player.</strong>
+												<li>Fix: It was a problem with wrong variable being connected and the death event not being triggered.</li>
 												<strong>• Player movements not smooth.</strong>
 												<li>Fix: Animation was not imported properly.</li>
 												
