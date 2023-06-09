@@ -52,7 +52,7 @@
 
 			<!-- Logo -->
 			<div class="logo">
-            	<img src="../images/" alt="">
+            	<img src="../images/logo.png" alt="">
             </div>
 
           	<ul>
@@ -83,7 +83,7 @@
 			<div class="blog-head">
 				<h2>Dungeon Explorer</h2>
 				<ul class="blog-breadcrumb">
-                	<li><a href="../index.html/#portfolio">Portfolio</a></li>
+                	<li><a href="/index.html#portfolio">Portfolio</a></li>
                 	<li>Dungeon Explorer</li>
 				</ul>
 			</div>
@@ -116,7 +116,7 @@
 													</div>
 
 													<div class="mySlides fadeSlide">
-														<img class="slideVideo"  src="../images/FYP/Cave.gif" style="width:40%">
+														<img class="slideVideo"  src="../images/FYP/Cave.gif" style="width:100%">
 													</div>
 
 													<div class="mySlides fadeSlide">
@@ -159,10 +159,10 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>About the project?</h4>
 											<ul>
-												<li>• Its a first person adventure game. Player must explore the island in their car.
-													 While exploring the island player will find the ruins of the old temple where they will find various puzzles and after solving them the player will get crystals. This will help 
-													 them enter the dungeon. Then the player must find their way to the centre of the dungeon while avoiding the guard in there and solving the puzzles.
-												</li>
+												<li>•Embark on a stealthy first-person adventure to the crypt.
+													Solve puzzles, overcome obstacles, and outsmart enemies in captivating environments.
+													 Navigate carefully, stay undetected, and unveil the secrets within.
+													</li>
 											</ul>
 										</div>
 																									
@@ -182,42 +182,47 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>Goals</h4>
 											<ul>
-												<li>• Make a complete game.</li>
-												<li>• Develop AI and learn new blueprint skills.</li>
-												<li>• Learn new material skills.</li>
-												<li>• Learn new level design skills.</li>
+												<li>• Learn about environment design.</li>
+												<li>• Learn more about different genre.</li>
+												<li>• Advance my visual coding and AI development skills.</li>
+												<li>• Improve game design, level design and bug finding skills.</li>
 
 
 											</ul>
 										</div>
 
 										<!-- Categories Challenges faced and how I overcame them -->
-										<!-- <div class="side-left" style="margin-bottom: 3px">
+										<div class="side-left" style="margin-bottom: 3px">
 											<h4>Challenges faced and how I overcame them.</h4>
 											<ul>
-												<strong>• Jump scare feeling. </strong>
-												<li>Fix: The speed of the AI walking past the player was slow increased it, added more bass to sound and decreased the intensity of the light to make it scarier.</li>
-												<strong>• Problems with inventory system not letting player add more item event after there being space in the bag.</strong> 
-												<li>Fix: It was a problem with the item taking multiple spaces and showing that its full. Fixed it by changing them to according to the item picked.</li>
-												<strong>• AI not moving even after seeing the player.</strong>
-												<li>Fix: I researched and made some changes to the AI collision as it was way small and not touching the ground to work.</li>
+												<strong>• Checkpoint System. </strong>
+												<li>Fix: When player respawned his old stats were not reset and all inventory items were lost. Tried fixing it, couldn’t do it.
+													 Divided the dungeon into 3 stages so even if player restarts he isn’t far from the end of the level. Also to optimize the game</li>
+
+												<strong>• Dungeon Layout change.</strong> 
+												<li>Fix: The design look was bad. Rather than having an old simple straight hallway to cross through. After player feedback. Player now has a choice of which route to take. Right now it looks like 99.</li>
+												<strong>• Door not opening after checking values.</strong>
+												<li>Fix: A delay was added and a condition was made that if the value is not the same, the door won't open</li>
+												<strong>• Beach Layout change.</strong>
+												<li>Fix: Made it linear than how initially planned as it was being too big, lengthy and unable to be complete in the given time.
+													 Also changed from a forest to a mountain cliff area to give the player more complex movement path and verticality to the level.</li>
 												
 
 											</ul>
-										</div> -->
+										</div>
 
 										<!-- Categories Testing -->
-										<!-- <div class="side-left" style="margin-bottom: 3px">
+										<div class="side-left" style="margin-bottom: 3px">
 											<h4>Testing</h4>
 											<ul>
-												<strong>• Player being unable to respawn with the gun.</strong>
-												<li>Fix: Had to tell the gun blueprint to be spawned with the player after he dies by asking as a Boolean if the player has died or not. If yes destroy previous actor and respawn if not, then don’t destroy.</li>
-												<strong>• Gun not getting destroyed after the player dies.</strong>
-												<li>Fix: Male a Boolean if the player has died or not. If yes destroy previous gun actor and respawn if not, then don’t destroy.</li>
+												<strong>• Player can’t move when respawned- .</strong>
+												<li>Fix: I went to each level blueprint and made set the player walking mode at begin play so whenever that level is loaded the player can move.</li>
+												<strong>• Beach level no complex character movement.</strong>
+												<li>Fix: Added verticality to the level and gave player the feeling of going in a dungeon area .</li>
 												
 
 											</ul>
-										</div> -->
+										</div>
 									
 										
 									</div>
@@ -227,14 +232,12 @@
 
 								<!-- Pagination Blog -->
 								<ul class="pagination">
+									
+									<li class="active"><a href="../pages/FYP.html">1</a></li>
+									<li><a href="../pages/Collab2.html">2</a></li>
+									<li><a href="../pages/PrisonEscape.html">3</a></li>
 									<li>
-										<a href="#"><i class="fa fa-angle-left"></i></a>
-									</li>
-									<li class="active"><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li>
-										<a href="#"><i class="fa fa-angle-right"></i></a>
+										<a href="Collab2.html"><i class="fa fa-angle-right"></i></a>
 									</li>
 								</ul>
 
@@ -286,7 +289,6 @@
 											<h4>Skills I learned</h4>
 											<ul>
 												<li>Basic AI</li>
-												<li>Animation in unreal</li>
 												<li>Actor Pickups</li>
 												<li>Interfaces</li>
 												<li>UI</li>
