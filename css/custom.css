@@ -135,6 +135,7 @@
     margin-bottom: 50px;
     left: 12%;
     padding: 10px;
+    background-color: rgba(29, 30, 32, 0.5);
 }
 .overflow--auto{
     overflow: auto;
