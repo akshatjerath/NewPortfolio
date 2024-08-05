@@ -118,7 +118,8 @@
 													<div class="videoWrapper">
 
 														<div class="mySlides fadeSlide">
-															<iframe width="560" height="315" src="https://www.youtube.com/embed/VT8-rYAKSxo?autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>													</div>
+															<iframe width="640" height="360" src="https://www.youtube.com/embed/149KgAiF0Uc?autoplay=1&mute=1&rel=0"" title="GoblinSeigeTrailer2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+														</div>
 
 													<div class="mySlides fadeSlide">
 														<img class="slideVideo"  src="../images/FYP/Beach.gif" style="width:90%">
@@ -171,7 +172,9 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>About the project?</h4>
 											<ul>
-											    <li>• Collaboratively redesigned a tower defense game, improving various gameplay elements to enhance player experience.</li>
+											    <li>•In Goblin Siege, defend the kingdom from invading goblins. 
+													Protect two gates, and if breached, defend the final door to the king's hall.
+													 Build and upgrade towers to withstand relentless enemy waves.</li>
 											</ul>
 										</div>
 																									
@@ -180,10 +183,7 @@
 										 <div class="side-left" style="margin-bottom: 3px">
 											<h4>What did I learn?</h4>
 											<ul>
-												<li>• I learned about AI with patrolling path that hits, basic hiding blueprint, health system,
-													 objective system, inventory system, flickering materials,
-													 torch, sfx, level designing and different materials type.
-												</li>
+												<li>• I learned advanced game design techniques, including level design for strategy games, and balancing and pacing for tower defense games.</li>
 											</ul>
 										</div> 
 
@@ -204,18 +204,15 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>Challenges faced and how I overcame them.</h4>
 											<ul>
-												<strong>• Checkpoint System. </strong>
-												<li>Fix: When player respawned his old stats were not reset and all inventory items were lost. Tried fixing it, couldn’t do it.
-													 Divided the dungeon into 3 stages so even if player restarts he isn’t far from the end of the level. Also to optimize the game</li>
+												<strong>• Balancing Enemies.</strong>
+                                                <li>Fix: Iteratively tested and adjusted enemy stats to ensure a smooth difficulty curve.</li>
 
-												<strong>• Dungeon Layout change.</strong> 
-												<li>Fix: The design look was bad. Rather than having an old simple straight hallway to cross through. After player feedback. Player now has a choice of which route to take. Right now it looks like 99.</li>
-												<strong>• Door not opening after checking values.</strong>
-												<li>Fix: A delay was added and a condition was made that if the value is not the same, the door won't open</li>
-												<strong>• Beach Layout change.</strong>
-												<li>Fix: Made it linear than how initially planned as it was being too big, lengthy and unable to be complete in the given time.
-													 Also changed from a forest to a mountain cliff area to give the player more complex movement path and verticality to the level.</li>
-												
+                                                <strong>• Visual Effects Integration.</strong>
+                                                <li>Fix: Worked on optimizing and implementing VFX for towers to enhance visual feedback.</li>
+
+                                                <strong>• Level Design Optimization.</strong>
+                                                <li>Fix: Redesigned levels for better flow and player engagement based on feedback.</li>
+
 
 											</ul>
 										</div>
@@ -224,11 +221,12 @@
 										<div class="side-left" style="margin-bottom: 3px">
 											<h4>Testing</h4>
 											<ul>
-												<strong>• Player can’t move when respawned- .</strong>
-												<li>Fix: I went to each level blueprint and made set the player walking mode at begin play so whenever that level is loaded the player can move.</li>
-												<strong>• Beach level no complex character movement.</strong>
-												<li>Fix: Added verticality to the level and gave player the feeling of going in a dungeon area .</li>
-												
+												<strong>• Enemy Spawn Issues.</strong>
+                                                <li>Fix: Ensured enemy spawn timings were consistent to maintain game balance.</li>
+
+                                                <strong>• Tower Placement Bugs.</strong>
+                                                <li>Fix: Debugged and fixed issues related to predetermined tower placements.</li>
+
 
 											</ul>
 										</div>
