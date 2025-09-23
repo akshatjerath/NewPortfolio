@@ -55,6 +55,57 @@
 
 /* ...........................................Custom right panel End....................................................... */
 
+/* ...........................................CV Styling Start....................................................... */
+
+.cv-section .cv-block {
+  margin-bottom: 40px;           /* add space between Professional vs Academic */
+}
+
+.cv-section .cv-block h4 {
+  font-weight: 600;
+  margin-bottom: 20px;           /* spacing below headings */
+}
+
+/* Button alignment and spacing */
+.cv-section .cv-block .btn-st {
+  display: inline-block;         /* keep animation working */
+  margin-right: 25px;            /* spacing between View and Download */
+  margin-bottom: 12px;           /* spacing below in case they wrap */
+  font-weight: 400;              /* looks sharper than 100 (your default) */
+  font-size: 16px;               /* slightly smaller for neatness */
+}
+
+/* Optional: center the buttons under the heading */
+.cv-section .cv-block {
+  text-align: center;
+  }
+
+/* ...........................................CV Styling End....................................................... */
+
+/* ...........................................Certifiacte Styling Start....................................................... */
+
+/* Certifications Section (unboxed) */
+.pt-resume .certs-list {
+  background: transparent;
+  padding: 0;
+  position: relative;
+}
+
+/* Remove decorative triangles/edges */
+.pt-resume .certs-list::before,
+.pt-resume .certs-list::after {
+  content: none !important;
+  display: none !important;
+  border: 0 !important;
+}
+
+/* Keep spacing clean between items */
+.pt-resume .certs-list .item {
+  margin-bottom: 24px;
+}
+
+
+/* ...........................................Certifiacte Styling End....................................................... */
 
 /* ...........................................Icon Styling Start....................................................... */
 
